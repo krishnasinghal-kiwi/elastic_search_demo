@@ -4,6 +4,7 @@ from .models import News
 
 PUBLISHER_INDEX = Index('news_demo')
 PUBLISHER_INDEX.settings(
+    # See Elasticsearch Indices API reference for available settings
     number_of_shards=1,
     number_of_replicas=1
 )
